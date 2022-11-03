@@ -152,13 +152,12 @@ a {
 }
 
 .webp .main__section--servicios{
-    background-image: url(../img/bg_mobile.jpg);
+    background-image: url(../img/bg.jpg);
 }
 .no-webp .main__section--servicios{
-    background-image: url(../img/bg_mobile.jpg);
+    background-image: url(../img/bg.jpg);
 }
 .main__section--servicios {
-    background-repeat: no-repeat;
     background-size: cover;
     padding: 0 5%;
 }
