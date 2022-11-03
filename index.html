@@ -18,20 +18,26 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nanum+Gothic:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nanum+Gothic:wght@700&display=swap"
             rel="stylesheet"
         />
 
         <link rel="preload" href="css/style.css" as="style" />
         <link rel="stylesheet" href="css/style.css" />
+
+        <link rel="preload" href="img/Sprinkle.svg" as="image" />
     </head>
     <body>
         <header class="header">
-            <img
+            <picture>
+                <source srcset="img/logo_texestampes.webp" type="image/webp" />
+                <img
                 src="img/logo_texestampes.jpg"
                 alt="logo"
                 class="header__logo"
-            />
+                />
+            </picture>
+            
             <nav class="header__nav">
                 <a href="#servicios" class="link">Servicios</a>
                 <a href="#nosotros" class="link">Nosotros</a>
@@ -39,7 +45,10 @@
             </nav>
         </header>
         <section class="hero">
-            <img src="img/hero_img.png" alt="img" class="hero__img" />
+            <picture>
+                <source srcset="img/hero_img.webp" type="image/webp" />
+                <img src="img/hero_img.png" alt="img" class="hero__img" />
+            </picture>
             <div class="hero__text">
                 <h1>Texstampes</h1>
                 <h2>
@@ -49,7 +58,7 @@
             </div>
         </section>
         <main class="main">
-            <section id = "servicios" class="main__section--servicios">
+            <section id="servicios" class="main__section--servicios">
                 <h3 class="main__section--servicios__h3">Nuestros Servicios</h3>
                 <div class="main__section--servicios__grilla contenedor">
                     <div class="main__section--servicios__grilla__elemento">
@@ -230,7 +239,7 @@
                     </div>
                 </div>
             </section>
-            <section id = "nosotros" class="main__section--nosotros">
+            <section id="nosotros" class="main__section--nosotros">
                 <h3 class="main__section--nosotros__h3">Sobre Nosotros</h3>
                 <div class="contenedor">
                     <p class="main__section--nosotros__text">
@@ -252,8 +261,8 @@
                     </p>
                 </div>
             </section>
-            <img src="img/yellow_wave.svg" class="wave" />
-            <section id = "contacto" class="main__section--contacto">
+            <img src="img/yellow_wave.svg" class="wave" alt="wave" />
+            <section id="contacto" class="main__section--contacto">
                 <h3 class="main__section--contacto__h3">Contáctanos</h3>
                 <div class="contenedor">
                     <p class="main__section--contacto__text">
@@ -262,7 +271,8 @@
                         Instagram.
                     </p>
                     <div class="main__section--contacto__flexbox">
-                        <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2FENNWYELYTXHWE1&e=ATMVPD9rv0b9LEXTh5ud1-CNG56xQQWw0uAxC6OUsLMjWn-a1SvriB1iniz6QBn1ukuNNmnlU0GrquLEdBOJLg&s=1"
+                        <a
+                            href="https://api.whatsapp.com/message/ENNWYELYTXHWE1?autoload=1&app_absent=0"
                             ><div class="main__section--contacto__element">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -327,10 +337,14 @@
                     </div>
                 </div>
             </section>
+            <script src="js/modernizr.js"></script>
             <script src="js/script.js"></script>
         </main>
         <footer class="footer">
-            <p>Maracay, Edo Aragua; sector Santa Ana, AV Los Cedros, Galpon N° 269.</p>
+            <p>
+                Maracay, Edo Aragua; sector Santa Ana, AV Los Cedros, Galpon N°
+                269.
+            </p>
             <p>Texstampes © 2022 | All rights reserved.</p>
         </footer>
     </body>

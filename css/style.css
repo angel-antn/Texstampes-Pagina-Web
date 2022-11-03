@@ -1,19 +1,21 @@
-:root{
+:root {
     --white: #fff;
     --yellow: #e9f120;
     --pink: #fe40bd;
     --black: #010101;
     --red: #e62a25;
     --purple: #aa53d8;
-    --shadow: 0px 10px 20px -2px rgba(0,0,0,0.5);;
+    --shadow: 0px 10px 20px -2px rgba(0, 0, 0, 0.5);
 }
 
-html{
+html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -21,36 +23,40 @@ img {
     max-width: 100%;
 }
 
-body{
-    font-family: 'Nanum Gothic', sans-serif;
+body {
+    font-family: "Nanum Gothic", sans-serif;
     color: var(--black);
 }
 
-h1,h2,h3,h4,h5{
-    font-family: 'Archivo Black', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Archivo Black", sans-serif;
 }
 
-h1{
+h1 {
     font-size: 4rem;
     color: #fff;
     margin-bottom: 0;
 }
 
-h2{
+h2 {
     margin-top: 0;
     font-size: 3.25rem;
     color: var(--yellow);
 }
-h3{
+h3 {
     font-size: 2.75rem;
     margin-top: 7.5rem;
 }
-h4{
+h4 {
     color: var(--white);
     font-size: 2rem;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -59,7 +65,7 @@ a{
     margin: 0 auto;
 }
 
-.header{
+.header {
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -67,11 +73,11 @@ a{
     flex-direction: column;
 }
 
-.header__logo{
+.header__logo {
     height: 18vh;
 }
 
-.header__nav{
+.header__nav {
     display: flex;
     gap: 1rem;
     flex-direction: column;
@@ -81,9 +87,8 @@ a{
     align-items: center;
 }
 
-.header__nav a{
+.header__nav a {
     font-size: 2.2rem;
-    font-weight: 700;
     color: var(--white);
     transition: color 0.25s;
     border-bottom: 1px solid var(--yellow);
@@ -92,41 +97,41 @@ a{
     width: 50%;
 }
 
-.header__nav a:first-child{
+.header__nav a:first-child {
     border-bottom: 1px solid var(--pink);
 }
 
-.header__nav a:last-child{
+.header__nav a:last-child {
     padding-bottom: 0;
     border: none;
 }
 
-.header__nav a:hover{
+.header__nav a:hover {
     color: var(--pink);
 }
 
-.hero{
-     background-image: url(../img/Sprinkle.svg);
-     display: flex;
-     flex-direction: column-reverse;
-     padding: 7rem 5% 0;
-     align-items: center;
+.hero {
+    background-image: url(../img/Sprinkle.svg);
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 7rem 5% 0;
+    align-items: center;
 }
 
-.hero__img{
+.hero__img {
     width: min(100%, 80rem);
     opacity: 0;
     transform: translateX(-100px);
     transition: all 1s;
 }
 
-.hero__text{
+.hero__text {
     opacity: 0;
     transform: translateY(-100px);
     transition: all 1s;
 }
 
-.hero__text span{
+.hero__text span {
     font-size: 1.8rem;
     background-color: var(--red);
     color: var(--white);
@@ -134,11 +139,11 @@ a{
     border-radius: 5px;
 }
 
-.main{
+.main {
     margin-top: 5rem auto;
 }
 
-.main section{
+.main section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,15 +151,19 @@ a{
     text-align: center;
 }
 
-.main__section--servicios{
+.webp .main__section--servicios{
+    background-image: url(../img/bg.webp);
+}
+.no-webp .main__section--servicios{
     background-image: url(../img/bg.jpg);
+}
+.main__section--servicios {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 5%;
 }
 
-.main__section--servicios__h3{
-
+.main__section--servicios__h3 {
     padding: 1rem 1rem;
     background-color: var(--pink);
     color: var(--white);
@@ -164,14 +173,14 @@ a{
     transition: all 0.75s;
 }
 
-.main__section--servicios__grilla{
+.main__section--servicios__grilla {
     margin-top: 5rem;
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 5rem;
 }
 
-.main__section--servicios__grilla__elemento{
+.main__section--servicios__grilla__elemento {
     margin: auto;
     margin-bottom: 2rem;
     opacity: 0;
@@ -179,7 +188,7 @@ a{
     transform: translateX(-100px);
 }
 
-.main__section--servicios__grilla__elemento h4{
+.main__section--servicios__grilla__elemento h4 {
     background-color: var(--black);
     border-radius: 2px;
     padding: 1rem 1rem;
@@ -188,7 +197,7 @@ a{
     border-right: 5px solid var(--yellow);
 }
 
-.main__section--servicios__grilla__elemento div{
+.main__section--servicios__grilla__elemento div {
     background-color: var(--pink);
     border-radius: 50%;
     width: 15rem;
@@ -200,38 +209,38 @@ a{
     margin: 0 auto;
 }
 
-.main__section--nosotros__h3{
+.main__section--nosotros__h3 {
     padding-bottom: 0.4rem;
     color: var(--black);
     opacity: 0;
     transition: all 0.75s;
 }
 
-.main__section--nosotros{
+.main__section--nosotros {
     background-color: var(--yellow);
 }
 
 .main__section--nosotros__text,
-.main__section--contacto__text{
+.main__section--contacto__text {
     font-size: 1.5rem;
-    font-weight: 700;
+
     line-height: 1.5;
     margin-bottom: 2.75rem;
     opacity: 0;
     transition: all 0.75s;
 }
 
-.wave{
+.wave {
     margin: 0;
 }
-.main__section--contacto__h3{
+.main__section--contacto__h3 {
     margin-top: 0;
     padding-bottom: 0.4rem;
     opacity: 0;
     transition: all 0.75s;
 }
 
-.main__section--contacto__flexbox{
+.main__section--contacto__flexbox {
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -240,7 +249,7 @@ a{
     margin-top: 5rem;
 }
 
-.main__section--contacto__element{
+.main__section--contacto__element {
     background-color: var(--black);
     padding: 1.5rem;
     border-radius: 15px;
@@ -251,92 +260,88 @@ a{
     transition: all 0.75s;
 }
 
-.main__section--contacto__element:hover{
+.main__section--contacto__element:hover {
     transform: scale(1.1);
 }
 
-.footer{
+.footer {
     margin-top: 7rem;
     background-color: var(--black);
     padding: 4rem 2rem;
 }
 
-.footer p{
-    font-weight: 700;
+.footer p {
     font-size: 1.2rem;
     color: var(--white);
     text-align: center;
 }
 
-.visible{
+.visible {
     opacity: 1;
 }
 
-.acomodarX{
+.acomodarX {
     transform: translateX(0);
 }
 
-.acomodarY{
+.acomodarY {
     transform: translateY(0);
 }
 
 @media (min-width: 345px) {
-    h1{
+    h1 {
         font-size: 5.5rem;
     }
-    
-    h2{
+
+    h2 {
         font-size: 4.2rem;
     }
-    
-    .hero__text span{
+
+    .hero__text span {
         font-size: 2rem;
     }
 
-    .main__section--contacto__flexbox{
+    .main__section--contacto__flexbox {
         gap: 5rem;
     }
-    
 }
 
 @media (min-width: 415px) {
-    h1{
+    h1 {
         font-size: 6rem;
     }
 
-    h2{
+    h2 {
         font-size: 5rem;
     }
 
-    .hero__text span{
+    .hero__text span {
         font-size: 3rem;
     }
-    .main__section--servicios h3{
-
+    .main__section--servicios h3 {
         padding: 1rem 3rem;
     }
 }
 
 @media (min-width: 550px) {
-
-    h1{
+    h1 {
         font-size: 7.2rem;
     }
 
-    h2{
+    h2 {
         font-size: 6rem;
     }
 
-    .hero__text span{
+    .hero__text span {
         font-size: 3.3rem;
     }
 
-    .header{
+    .header {
         flex-direction: row;
         padding: 0 10rem;
     }
 
-    .header__nav{
+    .header__nav {
         flex-direction: row;
         background-color: var(--white);
         padding: 0 0;
@@ -344,88 +349,85 @@ a{
         gap: 2rem;
     }
 
-    .header__nav a{
+    .header__nav a {
         color: var(--black);
     }
 
     .header__nav a:first-child,
-    .header__nav a{
+    .header__nav a {
         border: none;
         padding-bottom: 0;
     }
 
-    .main__section--contacto__flexbox{
+    .main__section--contacto__flexbox {
         gap: 7rem;
         margin-top: 7rem;
     }
-    
-    .main__section--contacto__element{  
+
+    .main__section--contacto__element {
         padding: 2.5rem;
     }
-    
 }
 
 @media (min-width: 610px) {
-    .header__nav{
+    .header__nav {
         gap: 3rem;
     }
-    h3{
+    h3 {
         font-size: 4rem;
     }
-    h4{
+    h4 {
         font-size: 3rem;
     }
     .main__section--nosotros__text,
-    .main__section--contacto__text{
+    .main__section--contacto__text {
         font-size: 2rem;
         margin-bottom: 3rem;
     }
-    .main__section--servicios__grilla{
+    .main__section--servicios__grilla {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (min-width: 1120px) {
-    .hero{
+    .hero {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: flex-end;
         padding: 7rem 10rem 0;
     }
-    .hero__text{
+    .hero__text {
         margin: auto;
     }
-    h3{
+    h3 {
         margin-top: 14rem;
     }
     .main__section--nosotros__text,
-    .main__section--contacto__text{
+    .main__section--contacto__text {
         font-size: 2.5rem;
         margin-bottom: 3.75rem;
     }
-    .main__section--servicios__grilla{
+    .main__section--servicios__grilla {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .footer{
+    .footer {
         margin-top: 12rem;
     }
-    .footer p{
+    .footer p {
         font-size: 1.5rem;
     }
 }
 
 @media (min-width: 1300px) {
-
-    h1{
+    h1 {
         font-size: 10rem;
     }
 
-    h2{
+    h2 {
         font-size: 8rem;
     }
 
-    .hero__text span{
+    .hero__text span {
         font-size: 5rem;
     }
-    
 }
