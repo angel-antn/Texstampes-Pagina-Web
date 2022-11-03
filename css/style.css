@@ -152,10 +152,10 @@ a {
 }
 
 .webp .main__section--servicios{
-    background-image: url(../img/bg.webp);
+    background-image: url(../img/bg_mobile.jpg);
 }
 .no-webp .main__section--servicios{
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/bg_mobile.jpg);
 }
 .main__section--servicios {
     background-repeat: no-repeat;
@@ -386,6 +386,15 @@ a {
     }
     .main__section--servicios__grilla {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 640px) {
+    .webp .main__section--servicios{
+        background-image: url(../img/bg.jpg);
+    }
+    .no-webp .main__section--servicios{
+        background-image: url(../img/bg.jpg);
     }
 }
 
